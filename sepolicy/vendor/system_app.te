@@ -1,0 +1,2 @@
+# PowerHAL
+binder_call(system_app, hal_power_default)

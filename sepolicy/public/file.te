@@ -1,0 +1,2 @@
+# PowerHAL
+type sysfs_perf_file, sysfs_type, fs_type;
