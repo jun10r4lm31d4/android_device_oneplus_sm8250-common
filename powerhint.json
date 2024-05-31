@@ -205,7 +205,8 @@
       "Name": "L3BigClusterMinFreq",
       "Path": "/sys/class/devfreq/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/min_freq",
       "Values": [
-        "1612800000",
+        "1516800000",
+        "1132800000",
         "300000000"
       ],
       "ResetOnInit": true
@@ -356,6 +357,12 @@
       "Value": "3879"
     },
     {
+      "PowerHint": "INTERACTION",
+      "Node": "L3BigClusterMinFreq",
+      "Duration": 0,
+      "Value": "1132800000"
+    },
+    {
       "PowerHint": "LAUNCH",
       "Node": "CPUBigClusterMinFreq",
       "Duration": 3000,
@@ -443,7 +450,7 @@
       "PowerHint": "LAUNCH",
       "Node": "L3BigClusterMinFreq",
       "Duration": 5000,
-      "Value": "1612800000"
+      "Value": "1516800000"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
