@@ -34,8 +34,6 @@ function configure_memory_parameters() {
         mkswap /dev/block/zram0
         swapon /dev/block/zram0
     fi
-    echo 0 > /proc/sys/vm/page-cluster
-    echo 100 > /proc/sys/vm/swappiness
 }
 
 # Settings for kona
