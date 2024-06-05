@@ -96,6 +96,9 @@ on property:sys.boot_completed=1
     # RT uclamp setting
     write /proc/sys/kernel/sched_util_clamp_min_rt_default 0
 
+    # Use default swappiness
+    write /proc/sys/vm/swappiness 60
+
     # Setup runtime blkio
     # value for group_idle is us
     write /dev/blkio/blkio.weight 1000
