@@ -220,16 +220,6 @@
       "HoldFd": true
     },
     {
-      "Name": "TAUClampBoost",
-      "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
-      "Values": [
-        "1",
-        "28"
-      ],
-      "DefaultIndex": 0,
-      "ResetOnInit": true
-    },
-    {
       "Name": "PowerHALMainState",
       "Path": "vendor.powerhal.state",
       "Values": [
@@ -299,13 +289,6 @@
     },
     {
       "PowerHint": "INTERACTION",
-      "Node": "TAUClampBoost",
-      "Duration": 0,
-      "Value": "28"
-    },
-
-    {
-      "PowerHint": "INTERACTION",
       "Node": "CPULittleClusterMinFreq",
       "Duration": 0,
       "Value": "1248000"
@@ -357,12 +340,6 @@
       "Node": "PMQoSCpuDmaLatency",
       "Duration": 5000,
       "Value": "44"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "TAUClampBoost",
-      "Duration": 5000,
-      "Value": "28"
     },
     {
       "PowerHint": "LAUNCH",
