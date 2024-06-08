@@ -67,7 +67,7 @@ vendor.audio.flac.sw.decoder.24bit=true
 vendor.audio.hal.boot.timeout.ms=20000
 vendor.audio.hal.output.suspend.supported=true
 vendor.audio.hw.aac.encoder=true
-vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.buffer.size.kb=256
 vendor.audio.offload.gapless.enabled=true
 vendor.audio.offload.multiaac.enable=true
 vendor.audio.offload.multiple.enabled=false
@@ -163,7 +163,8 @@ debug.sf.enable_gl_backpressure=1
 debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
-debug.sf.latch_unsignaled=1
+debug.sf.latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=0
 persist.sys.sf.color_saturation=1.0
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
@@ -188,9 +189,6 @@ debug.stagefright.omx_default_rank=0
 
 # Netflix
 ro.netflix.bsp_rev=Q8250-19134-1
-
-# Perf
-ro.vendor.extension_library=libqti-perfd-client.so
 
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
@@ -223,3 +221,6 @@ wifi.aware.interface=wifi-aware0
 
 # Zygote
 zygote.critical_window.minute=10
+
+# Increase lmkd aggressiveness
+ro.lmk.swap_free_low_percentage=100
